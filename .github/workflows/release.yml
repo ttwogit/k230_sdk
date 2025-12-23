@@ -5,7 +5,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  NAMESPACE: kendryte
+  NAMESPACE: ttwogit
   IMAGE_NAME: k230_sdk
 
 jobs:
@@ -58,7 +58,7 @@ jobs:
     runs-on: [ubuntu-latest]
     timeout-minutes: 180
     container:
-      image: ghcr.io/kendryte/k230_sdk:latest
+      image: ghcr.io/ttwogit/k230_sdk:latest
       env:
         CONF: k230_${{ matrix.cfg }}_defconfig
       options: --hostname release --user root
